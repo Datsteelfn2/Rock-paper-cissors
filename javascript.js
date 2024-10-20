@@ -31,22 +31,22 @@ const computerSelection=getComputerChoice();
 
 function playRound(humanSelection,computerSelection){
     if(humanSelection==rock && computerSelection==paper){
-        return "Computer wins, you lose";
+        return  `You chose ${humanSelection} computer chose ${computerSelection}, computer wins you lose`;
     }
     else if(humanSelection==rock && computerSelection==scissors){
-        return "you win, Computer loses"
+        return `You chose ${humanSelection} computer chose ${computerSelection}, you win`
     }
     else if(humanSelection==paper && computerSelection==rock){
-        return " you win, computer loses"
+        return `You chose ${humanSelection} computer chose ${computerSelection}, you win`
     }
     else if(humanSelection==paper && computerSelection==scissors){
-        return " you lose, computer wins"
+        return `You chose ${humanSelection} computer chose ${computerSelection}, computer wins you lose`;
     }
     else if(humanSelection==scissors && computerSelection==rock){
-        return " you lose, computer wins"
+        return `You chose ${humanSelection} computer chose ${computerSelection}, computer wins you lose`;
     }
     else if(humanSelection==scissors && computerSelection==paper){
-        return " you win, computer loses"
+        return `You chose ${humanSelection} computer chose ${computerSelection}, you win`
     }
     else{
         return "its a draw";
