@@ -27,12 +27,13 @@ function getHumanChoice(){
 
 
 }
-    let humanSelection=getHumanChoice();
-    let computerSelection=getComputerChoice();
+let humanSelection=getHumanChoice();
+let computerSelection=getComputerChoice();
     
 
 
 function playRound(humanSelection,computerSelection){
+    
     
     if(humanSelection==rock && computerSelection==paper){
         computerScore++;
@@ -61,7 +62,10 @@ function playRound(humanSelection,computerSelection){
     
 }
 function playGame(){
-    return playRound(humanSelection,computerSelection);
+   
+    return (playRound(humanSelection,computerSelection));
+    return (playRound(humanSelection,computerSelection));
+    return (playRound(humanSelection,computerSelection));
 
 }
 console.log(playGame());
