@@ -22,7 +22,7 @@ function getComputerChoice(){
 }
 
 function getHumanChoice(){
-    let input=prompt("Pick rock paper or scissors, write in lower case");
+    let input=prompt("Pick rock paper or scissors");
     return input.toLowerCase();
 
 
@@ -63,6 +63,8 @@ function playRound(humanSelection,computerSelection){
 }
 function playGame(){
    
+    return (playRound(humanSelection,computerSelection));
+    return (playRound(humanSelection,computerSelection));
     return (playRound(humanSelection,computerSelection));
     return (playRound(humanSelection,computerSelection));
     return (playRound(humanSelection,computerSelection));
